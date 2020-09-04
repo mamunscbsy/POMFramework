@@ -1,82 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="345" started-at="2020-05-23T02:38:41 CDT" finished-at="2020-05-23T02:38:41 CDT">
+  <suite name="Default suite" duration-ms="48667" started-at="2020-09-03T14:43:10 CDT" finished-at="2020-09-03T14:43:59 CDT">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@10bbd20a]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="345" started-at="2020-05-23T02:38:41 CDT" finished-at="2020-05-23T02:38:41 CDT">
-      <class name="steps.RunnerFile">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:steps.RunnerFile@10bbd20a]" name="setUpClass" is-config="true" duration-ms="245" started-at="2020-05-23T02:38:41 CDT" finished-at="2020-05-23T02:38:41 CDT">
+    <test name="Default test" duration-ms="48667" started-at="2020-09-03T14:43:10 CDT" finished-at="2020-09-03T14:43:59 CDT">
+      <class name="testCases.TC002_CreateLead">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="setData" is-config="true" duration-ms="38" started-at="2020-09-03T14:43:10 CDT" finished-at="2020-09-03T14:43:11 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="SKIP" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@10bbd20a]" name="runScenario" duration-ms="0" started-at="2020-05-23T02:38:41 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-23T02:38:41 CDT">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.IllegalArgumentException: Not a file or directory: C:\Users\mamun\Selenium\POMframework\src\main\java\features]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\mamun\Selenium\POMframework\src\main\java\features
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\mamun\Selenium\POMframework\src\main\java\features
-at cucumber.runtime.io.FileResourceIterator$FileIterator.<init>(FileResourceIterator.java:63)
-at cucumber.runtime.io.FileResourceIterator.<init>(FileResourceIterator.java:28)
-at cucumber.runtime.io.FileResourceIterator.createFileResourceIterator(FileResourceIterator.java:14)
-at cucumber.runtime.io.FileResourceIterable.iterator(FileResourceIterable.java:19)
-at cucumber.runtime.model.FeatureLoader.loadFromFeaturePath(FeatureLoader.java:31)
-at cucumber.runtime.model.FeatureLoader.load(FeatureLoader.java:23)
-at cucumber.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:33)
-at cucumber.api.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:93)
-at cucumber.api.testng.TestNGCucumberRunner.provideScenarios(TestNGCucumberRunner.java:76)
-at cucumber.api.testng.AbstractTestNGCucumberTests.scenarios(AbstractTestNGCucumberTests.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="login" is-config="true" duration-ms="18705" started-at="2020-09-03T14:43:13 CDT" finished-at="2020-09-03T14:43:31 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:steps.RunnerFile@10bbd20a]" name="tearDownClass" is-config="true" duration-ms="29" started-at="2020-05-23T02:38:41 CDT" finished-at="2020-05-23T02:38:41 CDT">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="createLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="createLead" duration-ms="26764" started-at="2020-09-03T14:43:31 CDT" data-provider="getData" finished-at="2020-09-03T14:43:58 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TCS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gopi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[J]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Gopi]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Jayakumar]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Website]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Insurance]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Sole Proprietorship]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1010]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[It is a Software Company]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[It's a trusted company]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[88]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[682]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[2084048]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[BDT - Bangladesh Taka]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[Tk]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Gopi]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Gnath]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[8822 Saddlehorn Dr]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[Apt 252]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Irving]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Bangladesh]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[75062]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[Car and Driver]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[682-208-4048]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[abc@yahoo.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- steps.RunnerFile -->
+        </test-method> <!-- createLead -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="closeBrowser" is-config="true" duration-ms="1040" started-at="2020-09-03T14:43:58 CDT" finished-at="2020-09-03T14:43:59 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.TC002_CreateLead -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 23 02:38:41 CDT 2020</td>
+<td>Started on:</td><td>Thu Sep 03 14:43:10 CDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (345 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48667 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,111 +67,18 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\mamun\Selenium\POMframework\src\main\java\features
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\mamun\Selenium\POMframework\src\main\java\features
-	at cucumber.runtime.io.FileResourceIterator$FileIterator.&lt;init&gt;(FileResourceIterator.java:63)
-	at cucumber.runtime.io.FileResourceIterator.&lt;init&gt;(FileResourceIterator.java:28)
-	at cucumber.runtime.io.FileResourceIterator.createFileResourceIterator(FileResourceIterator.java:14)
-	at cucumber.runtime.io.FileResourceIterable.iterator(FileResourceIterable.java:19)
-	at cucumber.runtime.model.FeatureLoader.loadFromFeaturePath(FeatureLoader.java:31)
-	at cucumber.runtime.model.FeatureLoader.load(FeatureLoader.java:23)
-	at cucumber.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:33)
-	at cucumber.api.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:93)
-	at cucumber.api.testng.TestNGCucumberRunner.provideScenarios(TestNGCucumberRunner.java:76)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.scenarios(AbstractTestNGCucumberTests.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 25 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace707976812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace707976812'><pre>java.lang.RuntimeException: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\mamun\Selenium\POMframework\src\main\java\features
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\mamun\Selenium\POMframework\src\main\java\features
-	at cucumber.runtime.io.FileResourceIterator$FileIterator.&lt;init&gt;(FileResourceIterator.java:63)
-	at cucumber.runtime.io.FileResourceIterator.&lt;init&gt;(FileResourceIterator.java:28)
-	at cucumber.runtime.io.FileResourceIterator.createFileResourceIterator(FileResourceIterator.java:14)
-	at cucumber.runtime.io.FileResourceIterable.iterator(FileResourceIterable.java:19)
-	at cucumber.runtime.model.FeatureLoader.loadFromFeaturePath(FeatureLoader.java:31)
-	at cucumber.runtime.model.FeatureLoader.load(FeatureLoader.java:23)
-	at cucumber.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:33)
-	at cucumber.api.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:93)
-	at cucumber.api.testng.TestNGCucumberRunner.provideScenarios(TestNGCucumberRunner.java:76)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.scenarios(AbstractTestNGCucumberTests.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 25 more
-</pre></div></td>
-<td>0</td>
-<td>steps.RunnerFile@10bbd20a</td></tr>
+<td title='testCases.TC002_CreateLead.createLead()'><b>createLead</b><br>Test class: testCases.TC002_CreateLead<br>Parameters: DemoSalesManager, crmsfa, TCS, Gopi, J, Gopi, Jayakumar, Mr, Website, Mr, 1000, Insurance, Sole Proprietorship, 1010, It is a Software Company, It's a trusted company, 88, 682, 2084048, 101, QA, BDT - Bangladesh Taka, 1000, Tk, Gopi, www.google.com, Gnath, 8822 Saddlehorn Dr, Apt 252, Irving, Texas, Bangladesh, 75062, 111, Car and Driver, 682-208-4048, abc@yahoo.com</td>
+<td></td>
+<td>26</td>
+<td>testCases.TC002_CreateLead@6895a785</td></tr>
 </table><p>
 </body>
 </html>

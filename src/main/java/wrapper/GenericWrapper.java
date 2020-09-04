@@ -19,8 +19,7 @@ public class GenericWrapper implements WrapperMethods {
 
 		//below we create Exception and handle it
 		try {
-		
-			
+					
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\mamun\\Selenium\\Selenium\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		

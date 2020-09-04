@@ -8,12 +8,9 @@ public class ViewLeadPage extends ProjectSpecificWrapper {
 		verifyTextByXpath("//input[@name='submitButton']", "firstName");
 		return this;
 	}
-
 	 public ViewLeadPage verifyTitleOfPage(String title) {
 		 verifyTitleOfPage(title);
-		 return this;
-		 
-		 
+		 return this;	 
 	  }
 	  public OpenTapsCRMPage clickEdit() {
 			clickByLinkText("Edit");
@@ -27,16 +24,14 @@ public class ViewLeadPage extends ProjectSpecificWrapper {
 		 clickByXpath("//a[text()='Delete']");
 		 return new MyLeadsPage();
 	 }
-	 
-	  
+	 	  
 	 public DuplicateLeadPage clickDuplicateLead() {
 		 clickByXpath("//a[text()='Duplicate Lead']");
 		 return new DuplicateLeadPage();
 	 }
 	 public ViewLeadPage confirmDupLeadCapturedLead(String Leadid) {
 		 verifyTextContainsById("viewLead_companyName_sp", Leadid);
-		 return this;
-		 
+		 return this;		 
 	 } 
 	 
 	 public FindLeadsPage clickFindLeads() {
