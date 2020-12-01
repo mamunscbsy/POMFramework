@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.Select;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -14,8 +15,8 @@ import cucumber.api.java.en.When;
 public class LoginTest {
 
 	ChromeDriver driver;
-	
-	@FindBy(how = How.ID, using="username") WebElement ekeUser;
+
+	//@FindBy(how = How.ID, using="username") WebElement ekeUser;
 
 	@Given("Launch chrome browser and load url") // "C:\\Users\\mamun\\Selenium\\Selenium\\Drivers\\chromedriver.exe"
 	public void launchChromeBrowserAndLoadUrl() {
@@ -29,7 +30,8 @@ public class LoginTest {
 
 	@Given("enter username as (.*)")
 	public void enterUsernameAsDemosalesmanager(String uname) {
-		ekeUser.sendKeys(uname);
+		driver.findElementById("username").sendKeys(uname);
+		//ekeUser.sendKeys(uname);
 	}
 
 	@Given("enter password as (.*)")
@@ -62,19 +64,19 @@ public class LoginTest {
 		driver.findElementByLinkText("Create Lead").click();
 	}
 
-	@When("enter the company as TCS")
-	public void enterTheCompanyAsTCS() {
-		driver.findElementByXPath("//input[@id='createLeadForm_companyName']").sendKeys("TCS");
+	@When("enter the company as (.*)")
+	public void enterTheCompanyAsTCS(String company) {
+		driver.findElementByXPath("//input[@id='createLeadForm_companyName']").sendKeys(company);
 	}
 
-	@When("enter the first name as Gopi")
-	public void enterTheFirstNameAsGopi() {
-		driver.findElementByXPath("//input[@id='createLeadForm_firstName']").sendKeys("Gopi");
+	@When("enter the firstname as (.*)")
+	public void enterTheFirstNameAsGopi(String fName) {
+		driver.findElementByXPath("//input[@id='createLeadForm_firstName']").sendKeys(fName);
 	}
 
-	@When("enter the last name as Jayakumar")
-	public void enterTheLastNameAsJ() {
-		driver.findElementByXPath("//input[@id='createLeadForm_lastName']").sendKeys("J");
+	@When("enter the lastname as (.*)")
+	public void enterTheLastNameAsJ(String lName) {
+		driver.findElementByXPath("//input[@id='createLeadForm_lastName']").sendKeys(lName);
 	}
 
 	@When("click the create lead button")
@@ -131,14 +133,14 @@ public class LoginTest {
 	@When("click Find Leads button")
 	public void click_Find_Leads_button() throws InterruptedException {
 		driver.findElementByXPath("//button[text()='Find Leads']").click();
-		
+
 		Thread.sleep(2000);
 	}
 
 	@When("click first resulting lead")
 	public void click_first_resulting_lead() throws InterruptedException {
 		driver.findElementByXPath("(//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a)[1]").click();
-		
+
 		Thread.sleep(2000);
 	}
 
@@ -214,7 +216,7 @@ public class LoginTest {
 	@Then("enter captured lead ID")
 	public void enter_captured_lead_ID() {
 		driver.findElementByXPath("(//div[@class='x-form-element']/input)[13]").sendKeys("10035");
-		
+
 	}
 
 	@Then("verify error message")
@@ -227,6 +229,12 @@ public class LoginTest {
 		}
 	}
 
+	@When("choose source as Website")
+	public void chooseSourceAsWebsite() {
+		WebElement source = driver.findElementById("createLeadForm_dataSourceId");
+		Select dd = new Select(source);
+		dd.selectByVisibleText("Website");
+	}
 	@Then("close browser")
 	public void close_browser() {
 		driver.quit();

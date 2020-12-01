@@ -28,7 +28,7 @@ Given Launch chrome browser and load url
 	And close browser
 
 @smoke	 
-Scenario: TC003_CreateLead
+Scenario Outline: TC003_CreateLead
 
 Given Launch chrome browser and load url 
 	And enter username as demosalesmanager 
@@ -38,14 +38,20 @@ Given Launch chrome browser and load url
 	And click leads link
 	When click createLead
 	
-	And enter the company as TCS
-	And enter the first name as Gopi
-	And enter the last name as J
+	And enter the company as <company>
+	And enter the firstname as <firstname>
+	And enter the lastname as <lastname>
 	And choose source as Website
 	And click the create lead button
 	Then its navigated ViewLeadPage 
 	And verify the firstname
 	And close browser
+	
+	Examples:
+		|company|firstname|lastname|
+		|TCS|Hema|Mali|
+		|ABC|Raj|Kumar|
+		|CBC|Gopi|Jkumar|
 	
 Scenario: TC004_EditLead
 	Given Launch chrome browser and load url 

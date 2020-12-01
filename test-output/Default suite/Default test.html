@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 03 14:43:10 CDT 2020</td>
+<td>Started on:</td><td>Mon Nov 30 00:53:18 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48667 ms)</td>
+<tr><td>Total time:</td><td>174 seconds (174378 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,64 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC005_DeleteLead", "Automate Leaftaps Application"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ONH3S9L&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mamun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8c7d94a02991f95ad45a6ff70d6f79bf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at steps.LoginTest.capture_lead_ID_of_first_resulting_lead(LoginTest.java:202)
+	at ?.capture lead ID of first resulting lead(file:src/test/java/features/doc.feature:88)
+</pre></div><a href='#' onClick='toggleBox("stack-trace88335763", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace88335763'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-ONH3S9L&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mamun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8c7d94a02991f95ad45a6ff70d6f79bf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at steps.LoginTest.capture_lead_ID_of_first_resulting_lead(LoginTest.java:202)
+	at ?.capture lead ID of first resulting lead(file:src/test/java/features/doc.feature:88)
+</pre></div></td>
+<td>19</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +133,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC002_CreateLead.createLead()'><b>createLead</b><br>Test class: testCases.TC002_CreateLead<br>Parameters: DemoSalesManager, crmsfa, TCS, Gopi, J, Gopi, Jayakumar, Mr, Website, Mr, 1000, Insurance, Sole Proprietorship, 1010, It is a Software Company, It's a trusted company, 88, 682, 2084048, 101, QA, BDT - Bangladesh Taka, 1000, Tk, Gopi, www.google.com, Gnath, 8822 Saddlehorn Dr, Apt 252, Irving, Texas, Bangladesh, 75062, 111, Car and Driver, 682-208-4048, abc@yahoo.com</td>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC001_Login and Logout", "Automate Leaftaps Application"</td>
 <td></td>
-<td>26</td>
-<td>testCases.TC002_CreateLead@6895a785</td></tr>
+<td>13</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
+<tr>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC001_Login and Logout", "Automate Leaftaps Application"</td>
+<td></td>
+<td>12</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
+<tr>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC002_Login and Logout for failure", "Automate Leaftaps Application"</td>
+<td></td>
+<td>10</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
+<tr>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC003_CreateLead", "Automate Leaftaps Application"</td>
+<td></td>
+<td>30</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
+<tr>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC003_CreateLead", "Automate Leaftaps Application"</td>
+<td></td>
+<td>24</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
+<tr>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC004_EditLead", "Automate Leaftaps Application"</td>
+<td></td>
+<td>31</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
+<tr>
+<td title='steps.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: steps.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC004_EditLead", "Automate Leaftaps Application EditLead"</td>
+<td></td>
+<td>31</td>
+<td>steps.RunnerFile@167fdd33</td></tr>
 </table><p>
 </body>
 </html>

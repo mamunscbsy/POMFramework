@@ -1,216 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48667" started-at="2020-09-03T14:43:10 CDT" finished-at="2020-09-03T14:43:59 CDT">
+  <suite name="Default suite" duration-ms="174378" started-at="2020-11-30T00:53:18 CST" finished-at="2020-11-30T00:56:13 CST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="48667" started-at="2020-09-03T14:43:10 CDT" finished-at="2020-09-03T14:43:59 CDT">
-      <class name="testCases.TC002_CreateLead">
-        <test-method status="PASS" signature="setData()[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="setData" is-config="true" duration-ms="38" started-at="2020-09-03T14:43:10 CDT" finished-at="2020-09-03T14:43:11 CDT">
+    <test name="Default test" duration-ms="174378" started-at="2020-11-30T00:53:18 CST" finished-at="2020-11-30T00:56:13 CST">
+      <class name="steps.RunnerFile">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:steps.RunnerFile@167fdd33]" name="setUpClass" is-config="true" duration-ms="213" started-at="2020-11-30T00:53:18 CST" finished-at="2020-11-30T00:53:18 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="login" is-config="true" duration-ms="18705" started-at="2020-09-03T14:43:13 CDT" finished-at="2020-09-03T14:43:31 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="createLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="createLead" duration-ms="26764" started-at="2020-09-03T14:43:31 CDT" data-provider="getData" finished-at="2020-09-03T14:43:58 CDT">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="13740" started-at="2020-11-30T00:53:19 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:53:32 CST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[DemoSalesManager]]>
+                <![CDATA["TC001_Login and Logout"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[TCS]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Gopi]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[J]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Gopi]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Jayakumar]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Mr]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Website]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Mr]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[1000]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Insurance]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Sole Proprietorship]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[1010]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[It is a Software Company]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[It's a trusted company]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[88]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[682]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[2084048]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[101]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[QA]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[BDT - Bangladesh Taka]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[1000]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[Tk]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[Gopi]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[www.google.com]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[Gnath]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[8822 Saddlehorn Dr]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[Apt 252]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[Irving]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[Texas]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[Bangladesh]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[75062]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[111]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[Car and Driver]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[682-208-4048]]>
-              </value>
-            </param>
-            <param index="36">
-              <value>
-                <![CDATA[abc@yahoo.com]]>
+                <![CDATA["Automate Leaftaps Application"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testCases.TC002_CreateLead@6895a785]" name="closeBrowser" is-config="true" duration-ms="1040" started-at="2020-09-03T14:43:58 CDT" finished-at="2020-09-03T14:43:59 CDT">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="12688" started-at="2020-11-30T00:53:32 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:53:45 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001_Login and Logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Leaftaps Application"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.TC002_CreateLead -->
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="10096" started-at="2020-11-30T00:53:45 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:53:55 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC002_Login and Logout for failure"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Leaftaps Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="30843" started-at="2020-11-30T00:53:55 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:54:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC003_CreateLead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Leaftaps Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="24667" started-at="2020-11-30T00:54:26 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:54:51 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC003_CreateLead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Leaftaps Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="31058" started-at="2020-11-30T00:54:51 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:55:22 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC004_EditLead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Leaftaps Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="19474" started-at="2020-11-30T00:55:22 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:55:41 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC005_DeleteLead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Leaftaps Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ONH3S9L', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mamun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8c7d94a02991f95ad45a6ff70d6f79bf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ONH3S9L', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mamun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8c7d94a02991f95ad45a6ff70d6f79bf
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at steps.LoginTest.capture_lead_ID_of_first_resulting_lead(LoginTest.java:202)
+at ✽.capture lead ID of first resulting lead(file:src/test/java/features/doc.feature:88)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="31267" started-at="2020-11-30T00:55:41 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:56:12 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC004_EditLead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate Leaftaps Application EditLead"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:steps.RunnerFile@167fdd33]" name="tearDownClass" is-config="true" duration-ms="94" started-at="2020-11-30T00:56:12 CST" finished-at="2020-11-30T00:56:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- steps.RunnerFile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

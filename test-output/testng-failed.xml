@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC006_MergeLead">
+      <class name="steps.RunnerFile">
         <methods>
-          <include name="mergeLead" invocation-numbers="0"/>
-          <include name="closeBrowser"/>
-          <include name="setData"/>
-          <include name="login"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="6"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- testCases.TC006_MergeLead -->
+      </class> <!-- steps.RunnerFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
