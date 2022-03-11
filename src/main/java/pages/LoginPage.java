@@ -10,13 +10,13 @@ import wrapper.ProjectSpecificWrapper;
 public class LoginPage extends ProjectSpecificWrapper{
 	
 	
-	@Given("enter username as (.*)")
+	//@Given("enter username as (.*)")
 	public LoginPage enterUserName(String uName){
 		enterByName("USERNAME", uName);
 		return this;
 	}
 
-	@Given("enter password as (.*)")
+	//@Given("enter password as (.*)")
 	public LoginPage enterPassword(String pwd) {
 		enterById("password", pwd);
 		return this;

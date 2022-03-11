@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -14,20 +16,20 @@ import cucumber.api.java.en.When;
 
 public class LoginTest {
 
-	ChromeDriver driver;
-
+	ChromeDriver driver = null;
+	
 	//@FindBy(how = How.ID, using="username") WebElement ekeUser;
 
-	@Given("Launch chrome browser and load url") // "C:\\Users\\mamun\\Selenium\\Selenium\\Drivers\\chromedriver.exe"
+	@Given("Launch chrome browser and load url") 
 	public void launchChromeBrowserAndLoadUrl() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\mamun\\Selenium\\Selenium\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\mamun\\drivers\\chromedriver.exe");
+		
 		driver = new ChromeDriver(); // For Chrome
 		driver.get("http://leaftaps.com/opentaps");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
-
+		
 	@Given("enter username as (.*)")
 	public void enterUsernameAsDemosalesmanager(String uname) {
 		driver.findElementById("username").sendKeys(uname);
@@ -93,13 +95,20 @@ public class LoginTest {
 	public void clickTheLogoutButton() {
 		driver.findElementByClassName("decorativeSubmit").click();
 	}
-
+	@Then("close browser")
+	public void close_browser() {
+		driver.quit();
+	}
+	
 	@Then("verify error msg")
 	public void verifyErrMsg() {
 		String text = driver.findElementById("errorDiv").getText();
 
 		if (text.contains("The Following Errors Occurred")) {
-			System.out.println("The given Credentials is wrong");
+			//System.out.println("The given Credentials is wrong");
+			System.out.println("Error message is matched");
+		}else {
+			System.out.println("Error message is not matched");
 		}
 
 	}
@@ -111,7 +120,11 @@ public class LoginTest {
 
 	@Then("verify the firstname")
 	public void verify_the_firstname() {
-		System.out.println("firstname");
+		String fname = driver.findElementById("viewLead_firstName_sp").getText();
+		if(fname.equals("Hema")) {
+			System.out.println("Firstname is matched");
+		}else
+		System.out.println("Firstname is not matched");
 	}
 
 	@Given("click leads link")
@@ -191,12 +204,14 @@ public class LoginTest {
 	}
 
 	@When("click find leads button")
-	public void click_find_leads_button() {
+	public void click_find_leads_button() throws InterruptedException {
 		driver.findElementByXPath("//button[text()='Find Leads']").click();
+		Thread.sleep(2000);
 	}
-
+	
 	@When("capture lead ID of first resulting lead")
 	public void capture_lead_ID_of_first_resulting_lead() throws InterruptedException {
+		Thread.sleep(2000);
 		String leadId = driver.findElementByXPath("(//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a)[1]").getText();
 		System.out.println(leadId);
 		driver.findElementByXPath("(//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a)[1]").click();
@@ -235,9 +250,5 @@ public class LoginTest {
 		Select dd = new Select(source);
 		dd.selectByVisibleText("Website");
 	}
-	@Then("close browser")
-	public void close_browser() {
-		driver.quit();
-	}
-
+	
 }

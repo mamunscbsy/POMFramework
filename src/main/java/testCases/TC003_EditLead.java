@@ -14,7 +14,7 @@ public class TC003_EditLead extends ProjectSpecificWrapper{
 	}	
 			
 	@Test(dataProvider = "getData")
-	public void editLead(String uName, String pwd,String Fname, String title, String ComName) {
+	public void editLead(String uName, String pwd,String Fname, String ComName) throws InterruptedException {
 		new LoginPage()
 		.enterUserName(uName)
 		.enterPassword(pwd)
@@ -29,18 +29,6 @@ public class TC003_EditLead extends ProjectSpecificWrapper{
 		.changeCompanyName(ComName)
 		.clickUpdate()
 		.closeBrowser();		
-		
-		
-		
-		
-		
-		
-		
-		
+						
 	}
-	
-	
-	
-	
-
-}
+	}

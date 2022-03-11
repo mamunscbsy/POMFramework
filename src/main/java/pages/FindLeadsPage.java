@@ -13,15 +13,14 @@ public class FindLeadsPage extends ProjectSpecificWrapper{
 		return this; 
 	}
 	
-	public ViewLeadPage clickFstResLead() {
+	public ViewLeadPage clickFstResLead() throws InterruptedException {
+		explecitWait();
 		clickByXpath("(//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a)[1]");
 		return new ViewLeadPage();
-	}
-		
+	}		
 	public void confirmChangeName() {
 		
-	}
-	
+	}	
 	 public FindLeadsPage clickOnPhone() {
 		 clickByXpath("//span[text()='Phone']");
 		 return this;

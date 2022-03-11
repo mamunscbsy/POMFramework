@@ -35,9 +35,5 @@ public class TC005_DuplicateLead extends ProjectSpecificWrapper{
 		.clickCreateLeadBtn()
 		
 		.verifyFirstName(firstName);
-		
-		
-		
-	}
-
+		}
 }

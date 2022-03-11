@@ -5,20 +5,21 @@ import wrapper.ProjectSpecificWrapper;
 public class ViewLeadPage extends ProjectSpecificWrapper {
 	
 	public ViewLeadPage verifyFirstName(String firstName) {
-		verifyTextByXpath("//input[@name='submitButton']", "firstName");
+		verifyTextByXpath("//input[@name='submitButton']", firstName);
 		return this;
+		
 	}
 	 public ViewLeadPage verifyTitleOfPage(String title) {
 		 verifyTitleOfPage(title);
 		 return this;	 
 	  }
-	  public OpenTapsCRMPage clickEdit() {
+	  public OpenTapsCRMpage clickEdit() {
 			clickByLinkText("Edit");
-			return new OpenTapsCRMPage();
+			return new OpenTapsCRMpage();
 	 }
 		 public ViewLeadPage confirmChangeName(String firstName) {
 		 verifyFirstName(firstName);
-		 return this;
+		 return this; 
 		}
 	 public MyLeadsPage clickDelete() {
 		 clickByXpath("//a[text()='Delete']");

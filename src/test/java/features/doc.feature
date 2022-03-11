@@ -11,23 +11,29 @@ Scenario Outline: TC001_Login and Logout
 	And  click the logout button
 	And close browser
 	
+	
 Examples: 
 	|username|password|
 	|DemoSalesManager|crmsfa|
 	|DemoCSR|crmsfa|
 
-@functional
-Scenario:  TC002_Login and Logout for failure
+@smoke
+Scenario Outline:  TC002_Login and Logout for failure
 
-Given Launch chrome browser and load url 
-	And enter username as ssssss 
-	And enter password as crmsfa 
+	Given Launch chrome browser and load url 
+	And enter username as <username> 
+	And enter password as <password> 
 	When click the login button 
 	Then its navigate same Page
 	But verify error msg
 	And close browser
 
-@smoke	 
+Examples: 
+	|username|password|
+	|Mamun|crmsfa|
+	|DemoCSR|crmsfa1|
+
+@regression 
 Scenario Outline: TC003_CreateLead
 
 Given Launch chrome browser and load url 
@@ -52,7 +58,7 @@ Given Launch chrome browser and load url
 		|TCS|Hema|Mali|
 		|ABC|Raj|Kumar|
 		|CBC|Gopi|Jkumar|
-	
+@regression	
 Scenario: TC004_EditLead
 	Given Launch chrome browser and load url 
 	And enter username as demosalesmanager 
@@ -73,7 +79,7 @@ Scenario: TC004_EditLead
 	And click update
 	And confirm changed name appears
 	And close browser
-	
+@regression	
 Scenario: TC005_DeleteLead
 Given Launch chrome browser and load url 
 	And enter username as demosalesmanager 

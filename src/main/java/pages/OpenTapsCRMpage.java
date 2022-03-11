@@ -1,17 +1,18 @@
 package pages;
 
+import org.openqa.selenium.Keys;
+
 import wrapper.ProjectSpecificWrapper;
 
-public class OpenTapsCRMPage extends ProjectSpecificWrapper{
+public class OpenTapsCRMpage extends ProjectSpecificWrapper{
 	
-	public OpenTapsCRMPage changeCompanyName(String ComName) {
+	public OpenTapsCRMpage changeCompanyName(String ComName) {
+	
 		enterById("updateLeadForm_companyName", ComName);
 		return this;
-	}
-	
+	}	
  public ViewLeadPage clickUpdate() {
 	 clickByXpath("//input[@value='Update']");
-		return new ViewLeadPage();
-	 
+		return new ViewLeadPage();	 
  }
 }

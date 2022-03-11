@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="174378" started-at="2020-11-30T00:53:18 CST" finished-at="2020-11-30T00:56:13 CST">
+  <suite name="Default suite" duration-ms="20286" started-at="2022-03-09T22:12:22 CST" finished-at="2022-03-09T22:12:42 CST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@17579e0f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="174378" started-at="2020-11-30T00:53:18 CST" finished-at="2020-11-30T00:56:13 CST">
+    <test name="Default test" duration-ms="20286" started-at="2022-03-09T22:12:22 CST" finished-at="2022-03-09T22:12:42 CST">
       <class name="steps.RunnerFile">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:steps.RunnerFile@167fdd33]" name="setUpClass" is-config="true" duration-ms="213" started-at="2020-11-30T00:53:18 CST" finished-at="2020-11-30T00:53:18 CST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:steps.RunnerFile@17579e0f]" name="setUpClass" is-config="true" duration-ms="83" started-at="2022-03-09T22:12:22 CST" finished-at="2022-03-09T22:12:22 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="13740" started-at="2020-11-30T00:53:19 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:53:32 CST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@17579e0f]" name="runScenario" duration-ms="5902" started-at="2022-03-09T22:12:22 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-09T22:12:28 CST">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="12688" started-at="2020-11-30T00:53:32 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:53:45 CST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@17579e0f]" name="runScenario" duration-ms="5059" started-at="2022-03-09T22:12:28 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-09T22:12:33 CST">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="10096" started-at="2020-11-30T00:53:45 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:53:55 CST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@17579e0f]" name="runScenario" duration-ms="4696" started-at="2022-03-09T22:12:33 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-09T22:12:38 CST">
           <params>
             <param index="0">
               <value>
@@ -62,11 +62,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="30843" started-at="2020-11-30T00:53:55 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:54:26 CST">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@17579e0f]" name="runScenario" duration-ms="4479" started-at="2022-03-09T22:12:38 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-09T22:12:42 CST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC003_CreateLead"]]>
+                <![CDATA["TC002_Login and Logout for failure"]]>
               </value>
             </param>
             <param index="1">
@@ -78,108 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="24667" started-at="2020-11-30T00:54:26 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:54:51 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC003_CreateLead"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Automate Leaftaps Application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="31058" started-at="2020-11-30T00:54:51 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:55:22 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC004_EditLead"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Automate Leaftaps Application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="19474" started-at="2020-11-30T00:55:22 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:55:41 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC005_DeleteLead"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Automate Leaftaps Application"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-ONH3S9L', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mamun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8c7d94a02991f95ad45a6ff70d6f79bf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-ONH3S9L', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mamun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8c7d94a02991f95ad45a6ff70d6f79bf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at steps.LoginTest.capture_lead_ID_of_first_resulting_lead(LoginTest.java:202)
-at ✽.capture lead ID of first resulting lead(file:src/test/java/features/doc.feature:88)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:steps.RunnerFile@167fdd33]" name="runScenario" duration-ms="31267" started-at="2020-11-30T00:55:41 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-11-30T00:56:12 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC004_EditLead"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Automate Leaftaps Application EditLead"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:steps.RunnerFile@167fdd33]" name="tearDownClass" is-config="true" duration-ms="94" started-at="2020-11-30T00:56:12 CST" finished-at="2020-11-30T00:56:13 CST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:steps.RunnerFile@17579e0f]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2022-03-09T22:12:42 CST" finished-at="2022-03-09T22:12:42 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

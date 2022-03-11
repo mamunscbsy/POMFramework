@@ -6,9 +6,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features="src/test/java/features",
 				glue="steps",
-				plugin = {"html: reports"},
-										
-				snippets = SnippetType.CAMELCASE
+				//plugin = {"html: reports"},
+				//tags="@functional"
+				tags={"@smoke"}						
+				//snippets = SnippetType.CAMELCASE
 				)
 
 public class RunnerFile extends AbstractTestNGCucumberTests {

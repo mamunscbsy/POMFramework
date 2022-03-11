@@ -14,24 +14,24 @@ import utils.ReadExcel1;
 
 public class ProjectSpecificWrapper extends GenericWrapper{
 
-	
+
 	public String excelfile;
-	
+
 	//@Parameters({"url"})
 	@BeforeMethod
 	public void login() {
-	invokeApp("http://leaftaps.com/opentaps");
-	
+		invokeApp("http://leaftaps.com/opentaps");
+
 	}
 
 	@AfterMethod
 	public void closeBrowser() {
-quitBrowser();
+		quitBrowser();
 	}
-	
+
 	@DataProvider
 	public String[][] getData() throws IOException {		
 		ReadExcel1 rl = new ReadExcel1();
 		return rl.readExcel(excelfile);		
-		}
+	}
 }

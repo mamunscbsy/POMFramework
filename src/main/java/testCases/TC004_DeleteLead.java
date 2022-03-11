@@ -33,12 +33,5 @@ public class TC004_DeleteLead extends ProjectSpecificWrapper{
 		.enterCapturedLeadId(capId)
 		.clickFindLeadsBtn()
 		.verifyErrorMsg();
-		
-		
-		
-		
-		
-		
-	}
-
+		}
 }

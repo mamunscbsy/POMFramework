@@ -11,11 +11,9 @@ public class TC006_MergeLead extends ProjectSpecificWrapper {
 	@BeforeTest
 	public void setData() {
 		excelfile = "TC006_MergeLead";
-	}
-	
+	}	
 	@Test(dataProvider= "getData")
 	public void mergeLead(String uName, String pwd,String entLeadId, String entLeadId1,String enterFormLId) {
-		
 		
 		new LoginPage()
 		.enterUserName(uName)
@@ -37,11 +35,5 @@ public class TC006_MergeLead extends ProjectSpecificWrapper {
 		.enterFormLeadId(enterFormLId)
 		.clickFindLeadsBtn()
 		.verifyErrorMsg();
-		
-		
-		
-		
-	}
-	
-
+		}
 }

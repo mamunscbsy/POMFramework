@@ -2,6 +2,8 @@ package wrapper;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Keys;
+
 public interface WrapperMethods{
 
 	/**
@@ -42,6 +44,13 @@ public interface WrapperMethods{
 	public void enterByXpath(String xpathValue, String data);
 	
 	/**
+	 * This method will clear the value to the text field using Xpath attribute to locate		 * 
+	 * @param xpathValue - name of the Webelement
+	 * @param data - The data to be sent to the webelement
+	 */
+	public void clearById(String xpathValue, Keys clear);
+	
+	/**
 	 * This method will enter the value to the text field using CssSelector attribute to locate		 * 
 	 * @param CssValue - name of the webelement
 	 * @param data - The data to be sent to the webelement
@@ -68,13 +77,15 @@ public interface WrapperMethods{
 	 * @param text  - The text to be verified
 	 */
 	public void verifyTextByXpath(String xpath, String text);
-
+	
 	/**
 	 * This method will verify the given text
 	 * @param xpath - The locator of the object in xpath
 	 * @param text  - The text to be verified
 	 */
 	public void verifyTextContainsByXpath(String xpath, String text);
+	
+	public void verifyErrorMessage(String xpathValue);
 
 	/**
 	 * This method will verify the given text
@@ -195,6 +206,8 @@ public interface WrapperMethods{
 	public void dismissAlert();
 	
 	public void takesnap() throws IOException;
+	
+	public void explecitWait() throws InterruptedException;
 
 	/**
 	 * This method will close all the browsers
@@ -204,4 +217,5 @@ public interface WrapperMethods{
 	 * This method will close the current active browser
 	 */
 	public void closeBrowser();
-}
+	
+	}

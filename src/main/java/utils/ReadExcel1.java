@@ -19,11 +19,11 @@ public class ReadExcel1 {
 			
 			// Row count
 			int rowCount = sheet.getLastRowNum();
-			System.out.println(rowCount);
+			//System.out.println(rowCount);
 			
 			//Column Count
 			int columnCount = sheet.getRow(0).getLastCellNum();
-			System.out.println(columnCount);
+			//System.out.println(columnCount);
 			
 			String[][] data =new String[rowCount][columnCount];
 					

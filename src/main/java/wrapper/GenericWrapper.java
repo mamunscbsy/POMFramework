@@ -6,6 +6,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,13 +21,14 @@ public class GenericWrapper implements WrapperMethods {
 		//below we create Exception and handle it
 		try {
 					
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\mamun\\Selenium\\Selenium\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\mamun\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		System.out.println("The chrome browser launched successfully");
+		
 		}catch(Exception e){
 		System.err.println("The chrome browser not launched");
 		}
@@ -47,7 +49,6 @@ public class GenericWrapper implements WrapperMethods {
 		
 	public void enterByName(String nameValue, String data) {
 		driver.findElementByName(nameValue).sendKeys(data);
-
 	}
 
 	public void enterByXpath(String xpathValue, String data) {
@@ -81,6 +82,12 @@ public class GenericWrapper implements WrapperMethods {
 
 	public void verifyTextByXpath(String xpath, String text) {
 		String txt = driver.findElementByXPath(xpath).getText();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if (txt.equals(text)) {
 			System.out.println("text is matched");
 		} else {
@@ -106,9 +113,19 @@ public class GenericWrapper implements WrapperMethods {
 		} else {
 			System.out.println("text not matched");
 		}
-
 	}
+	public void verifyErrorMessage(String xpathValue) {
+		String errorMsg = driver.findElementByXPath(xpathValue).getText();
+		System.out.println(errorMsg);
 
+		if(errorMsg.contains("No records")) { 
+			System.out.println("ErrorMsg is matched");
+		}
+		else {
+			System.out.println("Not Matched");
+		}
+	}	
+	
 	public void clickById(String id) {
 		driver.findElementById(id).click();
 
@@ -213,6 +230,7 @@ public class GenericWrapper implements WrapperMethods {
 	}
 	
 	public void takesnap() {
+		
 		File src = driver.getScreenshotAs(OutputType.FILE);
 		File tar = new File("./snap/image.png");
 		try {
@@ -232,8 +250,11 @@ public class GenericWrapper implements WrapperMethods {
 		driver.close();
 	}
 
-	
-		
+	public void explecitWait() throws InterruptedException {
+	Thread.sleep(2000);
 	}
 
-
+	public void clearById(String idValue, Keys clear) {
+		driver.findElementById(idValue).sendKeys(clear);
+	}
+	}
