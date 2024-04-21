@@ -5,7 +5,7 @@ import cucumber.api.SnippetType;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features="src/test/java/features",
-				glue="steps",
+				glue = "steps",
 				//plugin = {"html: reports"},
 				//tags="@functional"
 				tags={"@smoke"}						

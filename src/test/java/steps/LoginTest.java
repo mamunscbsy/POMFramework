@@ -22,7 +22,7 @@ public class LoginTest {
 
 	@Given("Launch chrome browser and load url") 
 	public void launchChromeBrowserAndLoadUrl() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\mamun\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 		
 		driver = new ChromeDriver(); // For Chrome
 		driver.get("http://leaftaps.com/opentaps");
@@ -33,7 +33,7 @@ public class LoginTest {
 	@Given("enter username as (.*)")
 	public void enterUsernameAsDemosalesmanager(String uname) {
 		driver.findElementById("username").sendKeys(uname);
-		//ekeUser.sendKeys(uname);
+		
 	}
 
 	@Given("enter password as (.*)")

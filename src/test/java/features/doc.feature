@@ -33,7 +33,7 @@ Examples:
 	|Mamun|crmsfa|
 	|DemoCSR|crmsfa1|
 
-@regression 
+@smoke 
 Scenario Outline: TC003_CreateLead
 
 Given Launch chrome browser and load url 
